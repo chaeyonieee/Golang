@@ -1,0 +1,13 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": "*.go",
+      "options": {
+        "singleQuote": false,
+        "trailingComma": "none"
+      }
+    }
+  ]
+}
