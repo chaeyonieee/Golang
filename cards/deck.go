@@ -4,23 +4,29 @@ import "fmt"
 
 type deck []string
 
+func newDeck() deck {
+
+		cards := deck{}
+
+		cardSuits := []string{"spades","diamond","hearts"}
+	cardValues := []string{"Ace","two","three"}
+
+	for _, suit := range cardSuits{
+		for _, value := range cardValues {
+			cards = append(cards,suit+" of "+value)
+
+		}
+
+	}
+	return cards
+	}
+
+
+
+
 func(d deck) print(){
-	for i, card := range d {
-		fmt.Println(i,card)
+	for i, cards := range d {
+		fmt.Println(i,cards)
 	}
 }
 
-package main
- 
-import "fmt"
- 
-type book string
- 
-func (b book) printTitle() {
-    fmt.Println(b)
-}
- 
-func main() {
-    var b book = "Harry Potter"
-    b.printTitle()
-}
