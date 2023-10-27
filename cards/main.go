@@ -2,11 +2,16 @@ package main
 
 func main() {
 
-	cards := newDeck()
+	// cards := newDeck()
 
-	// for i , card :=range card{
-	// 	fmt.Println(i,card)
-	// }
+	// // for i , card :=range card{
+	// // 	fmt.Println(i,card)
+	// // }
 
-	cards.print()
+	// cards.print()
+
+	// greeting := "Hi there"
+	// fmt.Println([]byte(greeting))
+	cards:= newDeck()
+cards.saveToFile("my_cards")
 }
